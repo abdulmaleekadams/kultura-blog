@@ -18,6 +18,6 @@ export const generateSuccessMessage = (data: any, status: number) => {
 export const generateErrorMessage = (data: any, status: number) => {
   return NextResponse.json(
     { message: 'Error', ...data },
-    { status, statusText: 'Ok' }
+    { status, statusText: 'Failed' }
   );
 };
