@@ -7,7 +7,7 @@ import { connectToDb } from '@/app/llib/helper';
 import prisma from '@/prisma';
 import bcrypt from 'bcrypt';
 
-const authOptions: AuthOptions = {
+export const authOptions: AuthOptions = {
   providers: [
     GithubProvider({
       clientId: '',
